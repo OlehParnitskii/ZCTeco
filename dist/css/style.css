@@ -1020,3 +1020,128 @@ select {
   line-height: 18px;
   color: #9EA1A7;
 }
+
+.footer {
+  background: #333640;
+  padding-top: 48px;
+}
+
+.footer .footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 33px;
+}
+
+.footer .footer__content .footer__content__info .adres {
+  font-family: Myriad-Regular;
+  font-size: 14px;
+  line-height: 18px;
+  color: #E5E6E7;
+  margin-top: 24px;
+}
+
+.footer .footer__content .footer__content__info .phone__number {
+  font-family: Myriad-Regular;
+  font-size: 14px;
+  line-height: 18px;
+  color: #E5E6E7;
+  margin-top: 10px;
+}
+
+.footer .footer__content .footer__content__info .schedule {
+  font-family: Myriad-Regular;
+  font-size: 14px;
+  line-height: 18px;
+  color: #E5E6E7;
+  margin-top: 10px;
+}
+
+.footer .footer__content .footer__content__info .social__list {
+  margin-top: 29px;
+  list-style: none;
+}
+
+.footer .footer__content .footer__content__info .social__list li + li {
+  margin-left: 16px;
+}
+
+.footer .footer__content .footer__content__info .social__list .social__list__item {
+  display: inline;
+}
+
+.footer .footer__content .footer__content__info .social__list .social__list__item svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer .footer__content .footer__list {
+  list-style: none;
+}
+
+.footer .footer__content .footer__list li + li {
+  margin-top: 16px;
+}
+
+.footer .footer__content .footer__list .footer__list__item a {
+  font-family: Myriad-Regular;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer .footer__botom {
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__botom .copyright {
+  font-family: Myriad-Regular;
+  font-size: 14px;
+  line-height: 18px;
+  color: #9EA1A7;
+}
+
+.footer .footer__botom .logo-hp {
+  width: 32px;
+  height: 32px;
+}
+
+.footer .footer__botom .feedback {
+  width: 318px;
+  height: 47px;
+  background: #5F626B;
+  border-radius: 8px 32px 0px 0px;
+  position: relative;
+  font-family: Myriad-Regular;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 11px 0 0 16px;
+}
+
+.footer .footer__botom .feedback::after {
+  content: " ";
+  position: absolute;
+  background-image: url("../image/fedback__border-radius.svg");
+  width: 32px;
+  height: 30px;
+  right: 0;
+}
+
+.footer hr {
+  margin: 0;
+  border-top: 1px solid #5f626b;
+}
