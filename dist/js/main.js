@@ -3022,5 +3022,16 @@ $(function() {
         dots: true,
     });
 
+    $('.header__menu-btn').on('click', function() {
+        $('.menu').addClass('active');
+        $('.close_btn').addClass('active');
+        $('.header__menu-btn').removeClass('active');
+
+    });
+    $('.close_btn').on('click', function() {
+        $('.menu').removeClass('active');
+        $('.close_btn').removeClass('active');
+        $('.header__menu-btn').addClass('active');
+    });
 
 });
