@@ -1056,10 +1056,11 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-bottom: 33px;
+}
+
+.footer .footer__content .footer__content__info {
+  margin-right: 146px;
 }
 
 .footer .footer__content .footer__content__info .adres {
@@ -1104,15 +1105,25 @@ select {
   height: 24px;
 }
 
-.footer .footer__content .footer__list {
+.footer .footer__content .footer__inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__content .footer__inner .footer__list {
   list-style: none;
 }
 
-.footer .footer__content .footer__list li + li {
+.footer .footer__content .footer__inner .footer__list li + li {
   margin-top: 16px;
 }
 
-.footer .footer__content .footer__list .footer__list__item a {
+.footer .footer__content .footer__inner .footer__list .footer__list__item a {
   font-family: Myriad-Regular;
   font-size: 18px;
   line-height: 24px;
