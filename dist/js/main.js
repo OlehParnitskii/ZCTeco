@@ -3012,15 +3012,29 @@
 ;
 
 $(function() {
-    $('.slider').slick({
-        prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/arow-prev.svg" alt=""></button>',
-        nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/arow-next.svg" alt=""></button>',
-        arrows: true,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        dots: true,
-    });
+    if(document.documentElement.clientWidth>600){
+        $('.slider').slick({
+            prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/arow-prev.svg" alt=""></button>',
+            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/arow-next.svg" alt=""></button>',
+            arrows: true,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+        });
+        console.log("sdllllllllllllll")
+    }
+   if(document.documentElement.clientWidth<600) {
+       $('.catalog__inner').slick({
+           arrows: false,
+           fade: true,
+           autoplay: true,
+           autoplaySpeed: 3000,
+           dots: true,
+       });
+       console.log("saaaaaaaaaaaaa")
+   }
+
 
     $('.header__menu-btn').on('click', function() {
         $('.menu').addClass('active');
