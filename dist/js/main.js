@@ -3014,8 +3014,8 @@
 $(function() {
     if(document.documentElement.clientWidth>600){
         $('.slider').slick({
-            prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/arow-prev.svg" alt=""></button>',
-            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/arow-next.svg" alt=""></button>',
+            prevArrow: '<button type="button" class="slick-btn slick-prev icon-go"></button>',
+            nextArrow: '<button type="button" class="slick-btn slick-next icon-go"></button>',
             arrows: true,
             fade: true,
             autoplay: true,
@@ -3024,7 +3024,7 @@ $(function() {
         });
         console.log("sdllllllllllllll")
     }
-   if(document.documentElement.clientWidth<600) {
+   if(document.documentElement.clientWidth<=600) {
        $('.catalog__inner').slick({
            arrows: false,
            fade: true,
