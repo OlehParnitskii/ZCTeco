@@ -3022,7 +3022,7 @@ $(function() {
             autoplaySpeed: 3000,
             dots: true,
         });
-        console.log("sdllllllllllllll")
+
     }
    if(document.documentElement.clientWidth<=600) {
        $('.catalog__inner').slick({
@@ -3032,20 +3032,32 @@ $(function() {
            autoplaySpeed: 3000,
            dots: true,
        });
-       console.log("saaaaaaaaaaaaa")
+
    }
 
 
-    $('.header__menu-btn').on('click', function() {
-        $('.menu').addClass('active');
-        $('.close_btn').addClass('active');
-        $('.header__menu-btn').removeClass('active');
+
+var i=0;
+
+    $('.header__menu-btn').on('click', function () {
+        if(i==0){
+
+            $('.menu').addClass('active');
+            $('.header__menu-btn').addClass('active');
+
+            i=1;
+        }
+        else{
+            $('.header__menu-btn').removeClass('active');
+            $('.menu').removeClass('active');
+            i=0;
+        }
+
+
 
     });
-    $('.close_btn').on('click', function() {
-        $('.menu').removeClass('active');
-        $('.close_btn').removeClass('active');
-        $('.header__menu-btn').addClass('active');
-    });
+
+
+
 
 });
