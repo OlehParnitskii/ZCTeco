@@ -1969,6 +1969,10 @@ a {
 }
 
 @media (max-width: 320px) {
+  .header {
+    height: 536px;
+  }
+
   .header .header__top .herader__top__inner {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1977,7 +1981,7 @@ a {
 
   .header .header__top .herader__top__inner .logo {
     width: 99px;
-    margin-left: 65px;
+    margin-left: 35px;
   }
 
   .header .header__top .herader__top__inner .header__menu {
@@ -2069,17 +2073,17 @@ a {
   .header .header__slider .header__slider__mobil-img {
     display: block;
     margin-top: 24px;
-    height: 352px;
-    width: 300px;
+    height: 330px;
+    width: 280px;
   }
 
   .header .header__slider .header__slider__mobil-img img {
-    height: 352px;
-    width: 300px;
+    height: 330px;
+    width: 280px;
   }
 
   .header .header__slider .header__slider__btn {
-    margin-top: 24px;
+    margin-top: 30px;
     margin-left: 70px;
     right: 0;
   }
@@ -2091,7 +2095,7 @@ a {
   .catalog .catalog__inner .slick-dots {
     position: absolute;
     left: 50%;
-    bottom: -25px;
+    bottom: -20px;
     z-index: 5;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
@@ -2124,10 +2128,16 @@ a {
 
   .catalog .catalog__inner .catalog__item {
     width: 100%;
+    height: 260px;
   }
 
   .catalog .catalog__inner .catalog__item .catalog__item__img img {
-    width: 100%;
+    width: 183px;
+    height: 135px;
+  }
+
+  .catalog .catalog__inner .catalog__item .catalo__item__title {
+    margin-top: 20px;
   }
 
   .popular {
@@ -2183,10 +2193,25 @@ a {
             flex-direction: column;
   }
 
+  .sale .inner .sale__item + .sale__item {
+    margin-left: 0;
+  }
+
   .sale .inner .sale__item {
     height: 180px;
     width: 100%;
     padding-bottom: 23px;
+  }
+
+  .sale .inner .sale__item .sale__item__img {
+    width: 78px;
+    height: 134px;
+    margin-right: 5px;
+  }
+
+  .sale .inner .sale__item .sale__item__img img {
+    width: 78px;
+    height: 134px;
   }
 
   .sale .inner .sale__item .sale__item__inner {
@@ -2217,6 +2242,7 @@ a {
   .sale .inner .sale__item .sale__item__inner .sale__item__price {
     font-size: 11.5315px;
     line-height: 13px;
+    margin-top: 25px;
   }
 
   .sale .inner .sale__item .sale__item__inner .sale__item__btn {
@@ -2226,7 +2252,7 @@ a {
     line-height: 12px;
     padding: 7px 23px 5px 10px;
     left: 32px;
-    position: relative;
+    position: absolute;
   }
 
   .sale .inner .sale__item .sale__item__inner .sale__item__btn::after {
