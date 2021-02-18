@@ -734,10 +734,21 @@ a {
           justify-content: flex-start;
   height: 185px;
   margin-right: 81px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header .header__top .menu .menu__inner .catalog__header .catalog__header__list li + li {
   margin-top: 24px;
+}
+
+.header .header__top .menu .menu__inner .catalog__header .catalog__header__list :nth-child(5) {
+  margin-top: 0;
+  margin-left: 81px;
+}
+
+.header .header__top .menu .menu__inner .catalog__header .catalog__header__list :nth-child(6) {
+  margin-left: 81px;
 }
 
 .header .header__top .menu .menu__inner .catalog__header .catalog__header__list .catalog__header__list-item a {
@@ -752,41 +763,6 @@ a {
 }
 
 .header .header__top .menu .menu__inner .catalog__header .catalog__header__list .catalog__header__list-item a:hover {
-  color: #9EA1A7;
-}
-
-.header .header__top .menu .menu__inner .catalog__header__continue__list {
-  margin-top: 60px;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  height: 185px;
-}
-
-.header .header__top .menu .menu__inner .catalog__header__continue__list li + li {
-  margin-top: 24px;
-}
-
-.header .header__top .menu .menu__inner .catalog__header__continue__list .catalog__header__continue__list-item a {
-  font-family: Myriad-Regular;
-  font-size: 18px;
-  line-height: 24px;
-  color: #ffffff;
-  text-decoration: none;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-}
-
-.header .header__top .menu .menu__inner .catalog__header__continue__list .catalog__header__continue__list-item a:hover {
   color: #9EA1A7;
 }
 
@@ -1337,6 +1313,32 @@ a {
   line-height: 24px;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.footer .footer__content .footer__inner .footer__list__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 185px;
+  margin-right: 81px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .footer__content .footer__inner .footer__list__menu :nth-child(5) {
+  margin-top: 0;
+  margin-left: 32px;
+}
+
+.footer .footer__content .footer__inner .footer__list__menu :nth-child(6) {
+  margin-left: 32px;
 }
 
 .footer .footer__botom {
