@@ -3012,45 +3012,69 @@
 ;
 
 $(function() {
-    if(document.documentElement.clientWidth>600){
+    
         $('.slider').slick({
             prevArrow: '<button type="button" class="slick-btn slick-prev icon-go"></button>',
             nextArrow: '<button type="button" class="slick-btn slick-next icon-go"></button>',
             arrows: true,
-            fade: true,
+            fade: false,
             autoplay: true,
             autoplaySpeed: 3000,
             dots: true,
+            
+           
+
         });
+        window.addEventListener("resize", function() {
+            if (document.documentElement.clientWidth <= 600) {
+                $('.catalog__inner').slick({
+                   
+                            arrows: false,
+        
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    dots: true,
+                       
+                   
+                });
+            }
+            
+          });
+    // if (document.documentElement.clientWidth <= 600) {
+    //     $('.catalog__inner').slick({
+    //         responsive: [
+    //             {
+    //               breakpoint: 600, // - от какой ширины изменять настройки(1024 и ниже)
+    //               settings: {
+    //                 arrows: false,
 
-    }
-   if(document.documentElement.clientWidth<=600) {
-       $('.catalog__inner').slick({
-           arrows: false,
-           fade: true,
-           autoplay: true,
-           autoplaySpeed: 3000,
-           dots: true,
-       });
+    //         autoplay: true,
+    //         autoplaySpeed: 3000,
+    //         dots: true,
+    //               }
+    //             },
+        
+    //           ]
+           
+    //     });
 
-   }
+    // }
 
 
 
-var i=0;
+    var i = 0;
 
-    $('.header__menu-btn').on('click', function () {
-        if(i==0){
+    $('.header__menu-btn').on('click', function() {
+        if (i == 0) {
 
             $('.menu').addClass('active');
             $('.header__menu-btn').addClass('active');
 
-            i=1;
-        }
-        else{
+            i = 1;
+        } else {
             $('.header__menu-btn').removeClass('active');
             $('.menu').removeClass('active');
-            i=0;
+            i = 0;
         }
 
 
